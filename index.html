@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MSc Business Analytics — Data &amp; AI Portfolio</title>
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --panel2:#1d212b; --line:#2a2f3a;
+    --ink:#e8eaf0; --muted:#9aa3b2; --accent:#5b8cff; --accent2:#7c5cff; --chip:#222734;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1040px;margin:0 auto;padding:48px 22px 72px}
+  header h1{font-size:30px;margin:0 0 8px;letter-spacing:-.02em}
+  header p{color:var(--muted);margin:0 0 22px;max-width:680px}
+  .skills{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 4px}
+  .chip{background:var(--chip);border:1px solid var(--line);
+    padding:5px 11px;border-radius:999px;font-size:12.5px;color:var(--muted)}
+  h2.section{font-size:14px;text-transform:uppercase;letter-spacing:.08em;
+    color:var(--muted);margin:42px 0 14px;font-weight:600}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;
+    padding:18px 18px 16px;display:flex;flex-direction:column;min-height:148px;
+    transition:border-color .15s,transform .15s}
+  .card:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .card h3{margin:0 0 6px;font-size:17px;letter-spacing:-.01em}
+  .card p{margin:0 0 14px;color:var(--muted);font-size:14px;flex:1}
+  .links{display:flex;flex-wrap:wrap;gap:8px}
+  .links a{font-size:12.5px;padding:5px 10px;border:1px solid var(--line);
+    border-radius:8px;background:var(--panel2);color:var(--ink)}
+  .links a.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));border:none;color:#fff}
+  .links a:hover{text-decoration:none;border-color:var(--accent)}
+  .note{color:var(--muted);font-size:13px;margin-top:34px;border-top:1px solid var(--line);padding-top:18px}
+  footer{color:var(--muted);font-size:13px;margin-top:30px}
+  code{background:var(--chip);padding:1px 6px;border-radius:5px;font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>MSc Business Analytics — Data &amp; AI Portfolio</h1>
+    <p>Applied analytics projects across SQL business analytics, experimentation, machine learning, optimisation, statistics, and AI-enabled data products. Each card links to a rendered report, the source notebook, and a short write-up.</p>
+    <div class="skills">
+      <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">R</span>
+      <span class="chip">PyTorch</span><span class="chip">scikit-learn</span><span class="chip">LightGBM</span>
+      <span class="chip">RAG</span><span class="chip">embeddings</span><span class="chip">A/B testing</span>
+      <span class="chip">clustering</span><span class="chip">Pyomo</span><span class="chip">NLP</span>
+    </div>
+  </header>
+
+  <h2 class="section">Featured</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Retail SQL Business Analytics — PopBeauty</h3>
+      <p>Relational database design, SQL analysis, retail inventory diagnosis, and business recommendations on a SQLite retail database.</p>
+      <div class="links">
+        <a class="primary" href="01_retail_sql_business_analytics_popbeauty/popbeauty_sql_database_analysis.html">Report</a>
+        <a href="01_retail_sql_business_analytics_popbeauty/popbeauty_sql_database_analysis.ipynb">Notebook</a>
+        <a href="01_retail_sql_business_analytics_popbeauty/">Details</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>A/B Testing of Loan Review Policies</h3>
+      <p>Experimental design and hypothesis testing to compare loan-review policies and quantify the effect on outcomes.</p>
+      <div class="links">
+        <a class="primary" href="02_lendingclub_experimentation_segmentation_prediction/loan_policy_ab_testing_report.html">Report</a>
+        <a href="02_lendingclub_experimentation_segmentation_prediction/">Details</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Borrower Segmentation via Clustering</h3>
+      <p>Unsupervised segmentation of borrowers into actionable groups, with profile interpretation for business use.</p>
+      <div class="links">
+        <a class="primary" href="02_lendingclub_experimentation_segmentation_prediction/borrower_segmentation_cluster_analysis_report.html">Report</a>
+        <a href="02_lendingclub_experimentation_segmentation_prediction/">Details</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Deep Learning for Default Prediction</h3>
+      <p>A PyTorch dense neural network predicting loan default, with feature selection, class-imbalance handling, and tuning.</p>
+      <div class="links">
+        <a class="primary" href="02_lendingclub_experimentation_segmentation_prediction/lendingclub_deep_learning_default_prediction.html">Report</a>
+        <a href="02_lendingclub_experimentation_segmentation_prediction/lendingclub_deep_learning_default_prediction.ipynb">Notebook</a>
+        <a href="02_lendingclub_experimentation_segmentation_prediction/">Details</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>AI Investment Evaluation RAG Agent</h3>
+      <p>Retrieval-augmented generation pipeline that evaluates capital-investment cases from source documents, tested across sectors.</p>
+      <div class="links">
+        <a class="primary" href="05_ai_data_products_search_and_automation/ai_investment_rag_agent.html">Report</a>
+        <a href="05_ai_data_products_search_and_automation/ai_investment_rag_agent.ipynb">Notebook</a>
+        <a href="05_ai_data_products_search_and_automation/">Details</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Property Risk Scorecard (Computer Vision)</h3>
+      <p>Converts a CNN damage classifier into a business-facing risk scorecard for property underwriting decisions.</p>
+      <div class="links">
+        <a class="primary" href="05_ai_data_products_search_and_automation/property_risk_scorecard_computer_vision.html">Report</a>
+        <a href="05_ai_data_products_search_and_automation/property_risk_scorecard_computer_vision.ipynb">Notebook</a>
+        <a href="05_ai_data_products_search_and_automation/">Details</a>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="section">AI Data Products — Search &amp; Automation</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Financial News Semantic Search</h3>
+      <p>Sentence-transformer embeddings with cosine-similarity retrieval and a Gradio interface for natural-language queries.</p>
+      <div class="links">
+        <a class="primary" href="05_ai_data_products_search_and_automation/financial_news_semantic_search.html">Report</a>
+        <a href="05_ai_data_products_search_and_automation/financial_news_semantic_search.ipynb">Notebook</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Receipt OCR with a Vision-Language Model</h3>
+      <p>Uses Gemini Vision to extract receipt totals (CORD-v2), with prompt design, parsing, and tolerance-based evaluation.</p>
+      <div class="links">
+        <a class="primary" href="05_ai_data_products_search_and_automation/gemini_receipt_ocr_evaluation.html">Report</a>
+        <a href="05_ai_data_products_search_and_automation/gemini_receipt_ocr_evaluation.ipynb">Notebook</a>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="section">Advanced ML — Imbalanced Classification</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>LightGBM Benchmark</h3>
+      <p>Gradient-boosted classification on imbalanced data, evaluated beyond raw accuracy.</p>
+      <div class="links">
+        <a class="primary" href="04_advanced_ml_imbalanced_classification/lightgbm_imbalanced_classification.html">Report</a>
+        <a href="04_advanced_ml_imbalanced_classification/lightgbm_imbalanced_classification.ipynb">Notebook</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Random Forest Workflow</h3>
+      <p>Ensemble classification with a balanced-class workflow and evaluation.</p>
+      <div class="links">
+        <a class="primary" href="04_advanced_ml_imbalanced_classification/random_forest_imbalanced_classification.html">Report</a>
+        <a href="04_advanced_ml_imbalanced_classification/random_forest_imbalanced_classification.ipynb">Notebook</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Linear Discriminant Analysis</h3>
+      <p>LDA applied to imbalanced classification as a linear baseline and comparison.</p>
+      <div class="links">
+        <a class="primary" href="04_advanced_ml_imbalanced_classification/lda_imbalanced_classification.html">Report</a>
+        <a href="04_advanced_ml_imbalanced_classification/lda_imbalanced_classification.ipynb">Notebook</a>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="section">Optimisation &amp; Statistics</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Pool Formation Optimisation</h3>
+      <p>Constrained optimisation model for pool/group formation, with a written report of the formulation and results.</p>
+      <div class="links">
+        <a class="primary" href="03_operations_optimization/fifa_pool_formation_optimization_report.html">Report</a>
+        <a href="03_operations_optimization/fifa_pool_formation_optimization_notebook.ipynb">Notebook</a>
+        <a href="03_operations_optimization/">Details</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Fake-News Sentiment &amp; Topic Modelling</h3>
+      <p>Transformer-based sentiment scoring and LDA topic modelling, with interpretation of the resulting topics.</p>
+      <div class="links">
+        <a class="primary" href="06_statistical_business_analysis/fake_news_sentiment_topic_modeling.html">Report</a>
+        <a href="06_statistical_business_analysis/fake_news_sentiment_topic_modeling.ipynb">Notebook</a>
+        <a href="06_statistical_business_analysis/">Details</a>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="section">Additional projects (secondary)</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Credit Card Default — Model Comparison</h3>
+      <p>Random Forest, XGBoost, and TabPFN benchmarked on a credit-card default dataset.</p>
+      <div class="links">
+        <a class="primary" href="07_additional_projects/credit_card_default_model_comparison.html">Report</a>
+        <a href="07_additional_projects/credit_card_default_model_comparison.ipynb">Notebook</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Loan Default — PyTorch MLP</h3>
+      <p>End-to-end PyTorch binary-classification workflow applied to loan default.</p>
+      <div class="links">
+        <a class="primary" href="07_additional_projects/loan_default_prediction_pytorch_mlp.html">Report</a>
+        <a href="07_additional_projects/loan_default_prediction_pytorch_mlp.ipynb">Notebook</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Fashion-MNIST — MLP</h3>
+      <p>A PyTorch multilayer perceptron image classifier trained on Fashion-MNIST.</p>
+      <div class="links">
+        <a class="primary" href="07_additional_projects/fashion_mnist_pytorch_mlp.html">Report</a>
+        <a href="07_additional_projects/fashion_mnist_pytorch_mlp.ipynb">Notebook</a>
+      </div>
+    </div>
+  </div>
+
+  <p class="note">Each project links to a rendered HTML report (works even when GitHub's <code>.ipynb</code> preview is blank), the source notebook, and a folder README with objective, method, and results. Datasets are public or coursework-derived and included only where licensing permits.</p>
+
+  <footer>
+    Contact: <a href="https://www.linkedin.com/in/jash24298/">LinkedIn</a> · <a href="jashwanth240298@gmail.com">Email</a>
+  </footer>
+</div>
+</body>
+</html>
